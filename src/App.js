@@ -1,19 +1,13 @@
-
 import './App.css';
-import Hello from './component/Hello'
+import Hello from './component/Hello';
 import Welcome from './component/Welcome';
-
+import styles from './App.module.css';
 
 function App() {
-  const name = "Tom";
-  const naver = {
-    name : "네이버",
-    url : "https://nodejs.org/ko/"
-  }
   return (
     <div className="App">
       <Hello />
-      <Welcome />
+      <div className={styles.box}>app</div>
     </div>
   );
 }
