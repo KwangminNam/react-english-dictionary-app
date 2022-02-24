@@ -8,30 +8,24 @@
 // }
 
 // export default Hello;
+import { useState } from 'react';
+import styles from './Hello.module.css';
 
 export default function Hello(){
-  
-  function showName(){
-    console.log('john');
+ 
+  const [name,setName] = useState('mike');
+
+
+  function changeName(){
+    const newName = name === "mike" ? "jane" : "mike";
+    setName(newName);
   }
 
-  function showAge(age){
-    console.log(age);
-  }
-
-  function showText(e){
-    console.log(e.target.value);
-  }
   return (
     <>
       <h1>hello</h1>
-      <button onClick={showName}> show name</button>
-      <button onClick={
-        ()=>{
-          showAge(35)
-        }
-      }> show age</button>
-      <input type="text" onChange={showText}/>
+      <h2 id="mikeName" className={styles.name}>{name}</h2>
+      <button onClick={changeName}>이름바꿔줘</button>
     </>
   )
 
