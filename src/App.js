@@ -4,6 +4,7 @@ import Header from './component/Header';
 import DayList from './component/DayList';
 import Day from './component/Day';
 import {BrowserRouter,Route,Switch} from 'react-router-dom';
+import EmptyPage from './component/EmptyPage';
 
 
 function App() {
@@ -12,11 +13,15 @@ function App() {
     <div className="App">
       <Header/>
       <Switch>
-        <Route path="/">
-          
+        <Route exact path="/">
+          <DayList/>
         </Route>
-        <DayList/>
-        <Day/>
+        <Route path="/day/:day">
+          <Day/>
+        </Route>
+        <Route>
+          <EmptyPage></EmptyPage>
+        </Route>
       </Switch>
     </div>
     </BrowserRouter>
