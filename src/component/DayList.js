@@ -1,18 +1,24 @@
+import { useEffect,useState } from "react";
 import { Link } from "react-router-dom";
-import dummy from "../db/data.json";
+
 
 function DayList(){
-  console.log(dummy);
+  const [days , setDays] = useState([]);
+
+  useEffect(()=>{
+    console.log('change');
+  })
+
   return(
     <ul className="list_day">
-      {dummy.날짜.map(day =>
-          <li key={day.id}>
-            <Link to={`/day/${day.day}`}>
-            데이 {day.day}
+      {days.map(맵인자 =>
+          <li key={맵인자.id}>
+            <Link to={`/day/${맵인자.day}`}>
+            데이 {맵인자.day}
             </Link>
             </li>
         )}
-  </ul>
+    </ul>
   )
 
 }
