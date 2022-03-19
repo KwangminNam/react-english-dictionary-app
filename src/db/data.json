@@ -1,58 +1,46 @@
 {
   "dayss": [
-    {"id":1 , "day": 1},
-    {"id":2 , "day": 2},
-    {"id":3 , "day": 3}
-  ],
-  "wordss": [
     {
       "id": 1,
-      "day":1,
-      "eng":"book",
-      "kor":"책",
-      "isDone":true
+      "day": 1
     },
     {
       "id": 2,
-      "day":1,
-      "eng":"apple",
-      "kor":"사과",
-      "isDone":false
+      "day": 2
     },
     {
       "id": 3,
-      "day":2,
-      "eng":"동몰",
-      "kor":"animal",
-      "isDone":false
-    },
-    {
-      "id": 3,
-      "day":2,
-      "eng":"book",
-      "kor":"책",
-      "isDone":false
-    },
-    {
-      "id": 4,
-      "day":1,
-      "eng":"car",
-      "kor":"자동차",
-      "isDone":false
-    },
+      "day": 3
+    }
+  ],
+  "wordss": [
     {
       "id": 5,
-      "day":3,
-      "eng":"car",
-      "kor":"자동차",
-      "isDone":false
+      "day": 3,
+      "eng": "car",
+      "kor": "자동차",
+      "isDone": false
     },
     {
-      "id": 6,
-      "day":3,
-      "eng":"car",
-      "kor":"자동차",
-      "isDone":false
+      "day": "1",
+      "eng": "개",
+      "kor": "dog",
+      "isDone": false,
+      "id": 6
+    },
+    {
+      "day": "1",
+      "eng": "강아지",
+      "kor": "dog",
+      "isDone": false,
+      "id": 7
+    },
+    {
+      "day": "2",
+      "eng": "glasses",
+      "kor": "안경",
+      "isDone": true,
+      "id": 8
     }
   ]
 }

@@ -1,24 +1,23 @@
-import { useEffect,useState } from "react";
 import { Link } from "react-router-dom";
+import useFetch from "../hooks/useFetch";
+
 
 
 function DayList(){
-  const [days , setDays] = useState([]);
-
-  useEffect(()=>{
-    console.log('change');
-  })
-
+  const days = useFetch('http://localhost:3002/dayss');
+  
   return(
-    <ul className="list_day">
-      {days.map(맵인자 =>
-          <li key={맵인자.id}>
-            <Link to={`/day/${맵인자.day}`}>
-            데이 {맵인자.day}
+  <>
+      <ul className="list_day">
+      {days.map(word =>
+          <li key={word.id}>
+            <Link to={`/day/${word.day}`}>
+            day {word.day}
             </Link>
             </li>
         )}
     </ul>
+  </>
   )
 
 }
