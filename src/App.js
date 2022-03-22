@@ -7,6 +7,7 @@ import {BrowserRouter,Route,Switch} from 'react-router-dom';
 import EmptyPage from './component/EmptyPage';
 import CreateWord from './component/CreateWord';
 
+
 function App() {
   return (
     <BrowserRouter>
