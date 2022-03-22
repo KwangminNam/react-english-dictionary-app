@@ -13,7 +13,7 @@ export default function Word({word:w}){
 
   function toggleDone(){
     // setIsDone(!isDone);
-    fetch(`http://localhost:3002/wordss/${word.id}`,{
+    fetch(`http://localhost:3001/wordss/${word.id}`,{
       method : 'PUT',
       headers : {
         "Content-type" : 'application/json',
@@ -31,7 +31,7 @@ export default function Word({word:w}){
 
   function del() {
     if(window.confirm('삭제 하시겠습니까?')){
-      fetch(`http://localhost:3002/wordss/${word.id}`,{
+      fetch(`http://localhost:3001/wordss/${word.id}`,{
         method : 'DELETE',
       }).then(res=>{
         if(res.ok){

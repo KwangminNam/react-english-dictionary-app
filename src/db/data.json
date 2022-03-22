@@ -22,25 +22,18 @@
       "isDone": false
     },
     {
-      "day": "1",
-      "eng": "개",
-      "kor": "dog",
-      "isDone": false,
-      "id": 6
-    },
-    {
-      "day": "1",
-      "eng": "강아지",
-      "kor": "dog",
-      "isDone": false,
-      "id": 7
-    },
-    {
       "day": "2",
       "eng": "glasses",
       "kor": "안경",
       "isDone": true,
       "id": 8
+    },
+    {
+      "day": "1",
+      "eng": "macbook",
+      "kor": "맥북",
+      "isDone": false,
+      "id": 9
     }
   ]
 }

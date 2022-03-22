@@ -4,13 +4,13 @@ import { useRef } from "react";
 
 export default function CreareWord(){
 
-    const days = useFetch('http://localhost:3002/dayss')
+    const days = useFetch('http://localhost:3001/dayss')
 
     function onSubmit(e){
       e.preventDefault();
 
               // setIsDone(!isDone);
-              fetch(`http://localhost:3002/wordss/`,{
+              fetch(`http://localhost:3001/wordss/`,{
                 method : 'POST',
                 headers : {
                   "Content-type" : 'application/json',
